@@ -25,6 +25,10 @@ class InformationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        SelectorAppearance.selectedSegmentIndex = selectedAppearanceIndex
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,7 +37,6 @@ class InformationViewController: UIViewController {
     
     
     @IBAction func selectionType(sender: AnyObject) {
-        print(SelectorAppearance.selectedSegmentIndex)
         if (SelectorAppearance.selectedSegmentIndex == 0) {
             selectedAppearanceIndex = 0
         }

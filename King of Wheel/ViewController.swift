@@ -18,6 +18,7 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     @IBOutlet weak var arrow: UIImageView!
     @IBOutlet weak var pointerSelector: UIImageView!
     @IBOutlet weak var kingSelector: UIImageView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     
     var wheelFunctions = WheelFunctions()
@@ -40,6 +41,7 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         
         selectorArray += [crownIcon, pointerSelector, kingSelector]
         
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -48,7 +50,11 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         }
         swipeDown.enabled = true
         getSelectorAppearence(selectorIndex, imageArray: selectorArray)
-        
+        if selectorIndex == 2 {
+            backgroundImage.image = UIImage(named: "backgroundOfMainView3.png")
+        } else {
+            backgroundImage.image = UIImage(named: "backgroundOfMainView4.png")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,6 +70,7 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         }
         if segue.identifier == "informationSegue" {
             let informationController = segue.destinationViewController as! InformationViewController
+            informationController.selectedAppearanceIndex = self.selectorIndex
             informationController.delegate = self
         }
     }

@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer" translatesAutoresizingMaskIntoConstraints="NO" id="UHf-gx-JhI">
-                                <rect key="frame" x="141" y="70" width="39" height="56"/>
+                                <rect key="frame" x="141" y="78" width="39" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="GNm-Uv-AA9"/>
                                     <constraint firstAttribute="height" constant="56" id="HRl-mq-UF4"/>
@@ -79,7 +79,7 @@
                             <constraint firstItem="MBq-QH-oPB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="5M0-4C-dgc"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0b7-Bz-Dlm" secondAttribute="bottom" id="7Gu-O8-5CE"/>
                             <constraint firstAttribute="centerX" secondItem="QZr-qw-Okg" secondAttribute="centerX" id="BkP-sU-JEM"/>
-                            <constraint firstItem="QZr-qw-Okg" firstAttribute="top" secondItem="UHf-gx-JhI" secondAttribute="bottom" constant="8" id="CGq-a9-xZe"/>
+                            <constraint firstItem="QZr-qw-Okg" firstAttribute="top" secondItem="UHf-gx-JhI" secondAttribute="bottom" id="CGq-a9-xZe"/>
                             <constraint firstAttribute="centerY" secondItem="QZr-qw-Okg" secondAttribute="centerY" id="DVT-u0-NF2"/>
                             <constraint firstItem="MBq-QH-oPB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="FdR-Fb-lj3"/>
                             <constraint firstAttribute="trailing" secondItem="cYL-dG-aeh" secondAttribute="trailing" constant="120" id="Fjg-1d-77I"/>
@@ -102,6 +102,7 @@
                     <connections>
                         <outlet property="Wheel" destination="QZr-qw-Okg" id="fEU-XK-tHr"/>
                         <outlet property="arrow" destination="p63-7x-FQT" id="6mG-zF-8zS"/>
+                        <outlet property="backgroundImage" destination="0b7-Bz-Dlm" id="NiB-dq-onM"/>
                         <outlet property="crownIcon" destination="cYL-dG-aeh" id="PD2-gd-nv4"/>
                         <outlet property="fingerTip" destination="KmH-Fa-7Va" id="mes-Kv-YlL"/>
                         <outlet property="kingSelector" destination="MBq-QH-oPB" id="t18-w9-lic"/>
