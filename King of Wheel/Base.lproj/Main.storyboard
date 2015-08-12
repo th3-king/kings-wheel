@@ -54,8 +54,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Crown" translatesAutoresizingMaskIntoConstraints="NO" id="cYL-dG-aeh">
                                 <rect key="frame" x="120" y="28" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Rcx-Wb-1KC"/>
-                                    <constraint firstAttribute="width" constant="80" id="RkB-CU-seo"/>
+                                    <constraint firstAttribute="width" secondItem="cYL-dG-aeh" secondAttribute="height" multiplier="1:1" id="1zc-FL-omR"/>
+                                    <constraint firstAttribute="height" constant="80" id="3dY-9S-Qsf"/>
+                                    <constraint firstAttribute="width" constant="80" id="nkk-EC-puK"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer" translatesAutoresizingMaskIntoConstraints="NO" id="UHf-gx-JhI">

@@ -59,14 +59,14 @@ struct WheelFunctions {
     
     func dropCrown(crown: UIImageView, view : UIView){
         UIView.animateWithDuration(3.0, animations: {
-            crown.transform = CGAffineTransformTranslate(crown.transform, 0.0, 46)
+            crown.transform = CGAffineTransformTranslate(crown.transform, 0.0, 48)
         })
     }
     
     
     func resetCrown(crown: UIImageView, view : UIView){
         UIView.animateWithDuration(0, animations: {
-            crown.transform = CGAffineTransformTranslate(crown.transform, 0.0, -46)
+            crown.transform = CGAffineTransformTranslate(crown.transform, 0.0, -48)
         })
     }
     

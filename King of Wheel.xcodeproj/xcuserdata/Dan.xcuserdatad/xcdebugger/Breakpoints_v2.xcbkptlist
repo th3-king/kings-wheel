@@ -99,5 +99,53 @@
             landmarkType = "19">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "King of Wheel/ViewController.swift"
+            timestampString = "460993489.396833"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_of_Wheel.ViewController.viewDidLoad (King_of_Wheel.ViewController)() -&gt; ()"
+                  moduleName = "King of Wheel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Dan/Desktop/@ll%20Programs/Swift/Projects/King%20of%20Wheel/King%20of%20Wheel/ViewController.swift"
+                  timestampString = "460982281.190746"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "2924">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "King_of_Wheel.ViewController.(viewDidLoad (King_of_Wheel.ViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "King of Wheel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Dan/Desktop/@ll%20Programs/Swift/Projects/King%20of%20Wheel/King%20of%20Wheel/ViewController.swift"
+                  timestampString = "460982281.195679"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "349">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

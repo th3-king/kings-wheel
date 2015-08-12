@@ -31,6 +31,7 @@ class SelectionViewController: UIViewController {
             let fontIndex = selectionFontColor[selectionFromMain!]
             
             KeyWord.text = index["word"]
+            
             actualSelection.text = index["card"]
             descriptionOfSelection.text = index["description"]
             descriptionOfSelection.sizeToFit()
