@@ -10,9 +10,11 @@ import UIKit
 
 /*
 TASKS:
-1. when viewcontroller is initially loaded finger + arrow images execute function
-2. stop alert controller from appearing every time
-3 chill fam
+1. add terms and conditions modal, see if can add a link in alert text
+2. add views that correspond to the halfs of the wheel and add swipe gestures with specific directions
+3. re write the descriptions of the options
+4. check if bold text on selectionViewController for word looks better (it doesn't)
+5. 
 */
 
 class ViewController: UIViewController, ModalViewControllerDelegate {
@@ -37,19 +39,25 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     let defaults = NSUserDefaults.standardUserDefaults()
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         Wheel.image = UIImage(named: "perfectedWheelUpdatedColors.png")
         
-        
-        
+        //initalises swipeGestures direction as down
         swipeDown.direction = .Down
+        //adds 'swipeDown' sipeGesture to view
         view.addGestureRecognizer(swipeDown)
         
-        
         selectorArray += [crownIcon, pointerSelector, kingSelector]
-        
+        arrowFade(arrow, fingerTip: fingerTip)
+        /*
+        let time: NSTimeInterval = 5.0;
+        let startAnimationTimer = NSTimer(timeInterval: time , target: self, selector: Selector("startAnimation") , userInfo: nil, repeats: false)
+        startAnimationTimer
+        */
         if (defaults.objectForKey("alertShown") == nil) {
             let termsAndConditions = UIAlertController(title: "Terms and Conditions",
                 message: "By pressing 'OK' you are agreeing to the terms and conditions outlined in the information screen (found by clicking i button below wheel)",preferredStyle: UIAlertControllerStyle.Alert)
@@ -60,6 +68,8 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
             }
             defaults.setObject(1, forKey: "alertShown")
         }
+        
+        
     }
     
     
@@ -71,9 +81,13 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         } else {
             backgroundImage.image = UIImage(named: "backgroundOfMainView4.png")
         }
+        //arrowFade(arrow, fingerTip: fingerTip)
+        
+        
+    }
+    
+    func startAnimation() {
         arrowFade(arrow, fingerTip: fingerTip)
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,14 +97,21 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     
     //Passing information from outcome of spin to modal view
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //gets segue with identifier selectionModal
         if segue.identifier == "selectionModal" {
+            //resets the crown after it dropped in the swipWpinWheel function
             wheelFunctions.resetCrown(crownIcon, view: view)
+            //assigns SelectionController the segue destinations ViewController
             let SelectionController = segue.destinationViewController as! SelectionViewController
             SelectionController.selectionFromMain = outCome
         }
         if segue.identifier == "informationSegue" {
+            //assigns informationController the segue destinations ViewController
             let informationController = segue.destinationViewController as! InformationViewController
+            //The InformationContollers the sets the 'seletedAppearenceIndex' to the selection index
+            //which is used to highlight the appearence of the selector last chosen
             informationController.selectedAppearanceIndex = self.selectorIndex
+            //sets the delegate to this view controller so it can pass the data of the selector (what shows selection) back
             informationController.delegate = self
         }
     }
@@ -128,6 +149,8 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         swipeDown.enabled = false
     }
     
+    //used because of protocal superClass which allows data
+    //from the informationViewController to be passed back to this viewController
     func sendValue(value: Int) {
         self.selectorIndex = value
     }

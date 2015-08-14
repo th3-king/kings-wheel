@@ -9,7 +9,7 @@
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Thin</string>
-            <string>HelveticaNeue-Thin</string>
+            <string>HelveticaNeue-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -28,7 +28,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundOfMainView4" translatesAutoresizingMaskIntoConstraints="NO" id="0b7-Bz-Dlm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfectedWheel" translatesAutoresizingMaskIntoConstraints="NO" id="QZr-qw-Okg">
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfectedWheelUpdatedColors" translatesAutoresizingMaskIntoConstraints="NO" id="QZr-qw-Okg">
                                 <rect key="frame" x="10" y="134" width="300" height="300"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -228,7 +228,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9i3-zd-d5o" secondAttribute="height" multiplier="70:11" id="er6-bn-8c6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -301,7 +301,7 @@
         <image name="arrow" width="133" height="356"/>
         <image name="backgroundOfMainView4" width="1080" height="1920"/>
         <image name="fingerTip" width="173" height="375"/>
-        <image name="perfectedWheel" width="991" height="992"/>
+        <image name="perfectedWheelUpdatedColors" width="991" height="992"/>
         <image name="pointer" width="77" height="113"/>
     </resources>
 </document>

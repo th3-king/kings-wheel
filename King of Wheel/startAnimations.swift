@@ -13,21 +13,25 @@ let wheelFunctions = WheelFunctions()
 
 
 func arrowFade(arrow: UIImageView, fingerTip: UIImageView){
-    UIView.animateWithDuration(4, animations: {
+    UIView.animateWithDuration(3.5 , animations: {
         arrow.hidden = false
         arrow.alpha = 0
-        arrow.hidden = true
-        arrow.alpha = 1
-    })
+        })
+            { (Bool) -> Void in
+                arrow.hidden = true
+                arrow.alpha = 1
+        }
     
-    UIView.animateWithDuration(4, animations: {
+    UIView.animateWithDuration(4 , animations: {
         fingerTip.hidden = false
         fingerTip.transform = CGAffineTransformMakeTranslation(0.0, 150.0)
         fingerTip.alpha = 0
-        fingerTip.hidden = true
-        fingerTip.transform = CGAffineTransformMakeTranslation(0.0, -150.0)
-        fingerTip.alpha = 1
         })
+        { (Bool) -> Void in
+            fingerTip.hidden = true
+            fingerTip.transform = CGAffineTransformMakeTranslation(0.0, -150.0)
+            fingerTip.alpha = 1
+    }
 
 }
 

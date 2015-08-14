@@ -26,8 +26,12 @@ class SelectionViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if selectionFromMain != nil {
+            //gets specific data dictionary from the array of data in SelectionData File
             var index = selectionData[selectionFromMain!]
+            //gets the specific index of backgroundColours (from SelectionData folder) which suits the spin outcome
             let colourIndex = selectionColour[selectionFromMain!]
+            //gets the specific index from fontColours which has a black/white option
+            //
             let fontIndex = selectionFontColor[selectionFromMain!]
             
             KeyWord.text = index["word"]
@@ -35,11 +39,6 @@ class SelectionViewController: UIViewController {
             actualSelection.text = index["card"]
             descriptionOfSelection.text = index["description"]
             descriptionOfSelection.sizeToFit()
-            if selectionFromMain! == 0 {
-                backToMainButton.backgroundColor = UIColor.blackColor()
-            } else {
-                backToMainButton.backgroundColor = UIColor.whiteColor()
-            }
             backToMainButton.setTitleColor(colourIndex, forState: UIControlState.Normal)
             
             if index["hint"] != nil {
@@ -52,16 +51,19 @@ class SelectionViewController: UIViewController {
             
             view.backgroundColor = colourIndex
             
-            if fontIndex == 0{
+            if fontIndex == false{
                 KeyWord.textColor = UIColor.blackColor()
                 actualSelection.textColor = UIColor.blackColor()
                 descriptionOfSelection.textColor = UIColor.blackColor()
                 hintLabel.textColor = UIColor.blackColor()
+                backToMainButton.backgroundColor = UIColor.blackColor()
+                
             } else {
                 KeyWord.textColor = UIColor.whiteColor()
                 actualSelection.textColor = UIColor.whiteColor()
                 hintLabel.textColor = UIColor.whiteColor()
                 descriptionOfSelection.textColor = UIColor.whiteColor()
+                backToMainButton.backgroundColor = UIColor.whiteColor()
             }
         }
         
