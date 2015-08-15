@@ -29,7 +29,6 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     @IBOutlet var swipeDown: UISwipeGestureRecognizer!
     
     
-    
     var wheelFunctions = WheelFunctions()
     var buttonPressed = 0
     var lastSelection: Float = 0.0
@@ -58,6 +57,7 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         let startAnimationTimer = NSTimer(timeInterval: time , target: self, selector: Selector("startAnimation") , userInfo: nil, repeats: false)
         startAnimationTimer
         */
+        
         if (defaults.objectForKey("alertShown") == nil) {
             let termsAndConditions = UIAlertController(title: "Terms and Conditions",
                 message: "By pressing 'OK' you are agreeing to the terms and conditions outlined in the information screen (found by clicking i button below wheel)",preferredStyle: UIAlertControllerStyle.Alert)
@@ -86,8 +86,8 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         
     }
     
-    func startAnimation() {
-        arrowFade(arrow, fingerTip: fingerTip)
+    func doesWork() {
+        print("hey")
     }
 
     override func didReceiveMemoryWarning() {
