@@ -158,18 +158,51 @@
                                     <constraint firstAttribute="width" secondItem="Czj-j3-V57" secondAttribute="height" multiplier="47:21" id="wuJ-MV-cup"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oj7-WD-dft">
-                                <rect key="frame" x="16" y="441" width="288" height="101"/>
-                                <string key="text">Disclaimer: we do not encourage you to use this app for excessive alcohol consumption, please drink wisely and safely we are not liable for any alcohol poisoning or excessive consumption that may harm you or any other person using this app</string>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4b-rZ-EhQ">
+                                <rect key="frame" x="104" y="84" width="113" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9lo-Nk-QOm"/>
+                                    <constraint firstAttribute="width" constant="113" id="lcX-UJ-LTa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="odm-RI-q0s">
-                                <rect key="frame" x="69" y="101" width="182" height="29"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookShare" translatesAutoresizingMaskIntoConstraints="NO" id="CO3-Zt-vmb">
+                                <rect key="frame" x="20" y="460" width="129" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CO3-Zt-vmb" secondAttribute="height" multiplier="129:50" id="qsq-ET-HRR"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vTp-26-Aqh" appends="YES" id="2tR-JR-y7b"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterShare" translatesAutoresizingMaskIntoConstraints="NO" id="wic-Xk-pwm">
+                                <rect key="frame" x="171" y="460" width="129" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wic-Xk-pwm" secondAttribute="height" multiplier="129:50" id="rsx-Fx-3Vj"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OJj-Yg-6tu" appends="YES" id="szt-gb-EmZ"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmj-Vr-zpf">
+                                <rect key="frame" x="86" y="518" width="148" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gmj-Vr-zpf" secondAttribute="height" multiplier="74:15" id="Ez5-oZ-rNA"/>
+                                </constraints>
+                                <state key="normal" title="Terms and conditions"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="odm-RI-q0s">
+                                <rect key="frame" x="65" y="118" width="190" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="odm-RI-q0s" secondAttribute="height" multiplier="13:2" id="7XI-3r-pGW"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Crown"/>
                                     <segment title="Pointer"/>
@@ -179,22 +212,27 @@
                                     <action selector="selectionType:" destination="qmR-p6-Cwi" eventType="valueChanged" id="5lU-DF-lek"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selection Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4b-rZ-EhQ">
-                                <rect key="frame" x="20" y="64" width="113" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oj7-WD-dft" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leadingMargin" id="1dj-hU-eX7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wic-Xk-pwm" secondAttribute="trailing" constant="4" id="5Rt-wz-M8u"/>
                             <constraint firstItem="QSh-dl-9vB" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leadingMargin" id="9OI-gE-8WX"/>
+                            <constraint firstItem="wic-Xk-pwm" firstAttribute="leading" secondItem="CO3-Zt-vmb" secondAttribute="trailing" constant="22" id="CLW-BR-Hfy"/>
+                            <constraint firstItem="lxC-48-rGI" firstAttribute="top" secondItem="Gmj-Vr-zpf" secondAttribute="bottom" constant="20" id="Che-tu-ORP"/>
+                            <constraint firstItem="CO3-Zt-vmb" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leadingMargin" constant="4" id="DTw-NA-aPf"/>
                             <constraint firstItem="Czj-j3-V57" firstAttribute="top" secondItem="I9B-tE-WPY" secondAttribute="bottom" constant="4" id="EJk-3w-Sch"/>
-                            <constraint firstItem="lxC-48-rGI" firstAttribute="top" secondItem="oj7-WD-dft" secondAttribute="bottom" constant="26" id="YcV-O3-j8c"/>
+                            <constraint firstItem="Gmj-Vr-zpf" firstAttribute="centerX" secondItem="qgw-MY-09w" secondAttribute="centerX" id="G4o-4i-feJ"/>
+                            <constraint firstItem="Gmj-Vr-zpf" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leading" constant="86" id="LaE-SZ-ZKN"/>
+                            <constraint firstItem="odm-RI-q0s" firstAttribute="top" secondItem="t4b-rZ-EhQ" secondAttribute="bottom" constant="13" id="N7A-Zx-jKv"/>
                             <constraint firstItem="QSh-dl-9vB" firstAttribute="top" secondItem="I9B-tE-WPY" secondAttribute="bottom" id="buV-01-9wZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oj7-WD-dft" secondAttribute="trailing" id="cIi-RP-0P9"/>
+                            <constraint firstItem="t4b-rZ-EhQ" firstAttribute="top" secondItem="Czj-j3-V57" secondAttribute="bottom" constant="39" id="eIH-IG-16s"/>
+                            <constraint firstItem="Gmj-Vr-zpf" firstAttribute="top" secondItem="wic-Xk-pwm" secondAttribute="bottom" constant="8" symbolic="YES" id="iNm-Zg-0Qg"/>
+                            <constraint firstItem="Gmj-Vr-zpf" firstAttribute="top" secondItem="CO3-Zt-vmb" secondAttribute="bottom" constant="8" symbolic="YES" id="qsg-nD-gLw"/>
+                            <constraint firstItem="t4b-rZ-EhQ" firstAttribute="centerX" secondItem="qgw-MY-09w" secondAttribute="centerX" id="s0a-vB-Iet"/>
+                            <constraint firstItem="odm-RI-q0s" firstAttribute="centerX" secondItem="qgw-MY-09w" secondAttribute="centerX" id="str-aW-aA8"/>
+                            <constraint firstItem="odm-RI-q0s" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leadingMargin" constant="49" id="u7i-aq-nmV"/>
                             <constraint firstItem="Czj-j3-V57" firstAttribute="centerX" secondItem="qgw-MY-09w" secondAttribute="centerX" id="umK-S0-imy"/>
+                            <constraint firstItem="wic-Xk-pwm" firstAttribute="top" secondItem="CO3-Zt-vmb" secondAttribute="top" id="urO-Gz-3GD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -202,6 +240,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5F6-zr-hhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vTp-26-Aqh" userLabel="facebookButton">
+                    <connections>
+                        <action selector="facebookShare:" destination="qmR-p6-Cwi" id="ViU-Z1-RWw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="OJj-Yg-6tu" userLabel="twitterButton">
+                    <connections>
+                        <action selector="twitterShare:" destination="qmR-p6-Cwi" id="9cj-wF-BVy"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="234" y="997"/>
         </scene>
@@ -244,7 +292,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CB7-mE-slc">
                                 <rect key="frame" x="16" y="219" width="288" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98h-q3-pfB">
@@ -300,8 +348,10 @@
         <image name="KingResized" width="825" height="378"/>
         <image name="arrow" width="133" height="356"/>
         <image name="backgroundOfMainView4" width="1080" height="1920"/>
+        <image name="facebookShare" width="1260" height="497"/>
         <image name="fingerTip" width="173" height="375"/>
         <image name="perfectedWheelUpdatedColors" width="991" height="992"/>
         <image name="pointer" width="77" height="113"/>
+        <image name="twitterShare" width="1259" height="498"/>
     </resources>
 </document>

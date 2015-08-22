@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 protocol ModalViewControllerDelegate {
     func sendValue(var value : Int)
@@ -54,7 +55,21 @@ class InformationViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func facebookShare(sender: AnyObject) {
+        let shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        shareToFacebook.setInitialText("Best drinking game for parties or groups, it's really a must have app")
+        shareToFacebook.addURL(NSURL(string: "http://www.google.com"))
+        self.presentViewController(shareToFacebook , animated: true, completion: nil)
+    }
     
+    @IBAction func twitterShare(sender: AnyObject) {
+        let shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        shareToTwitter.setInitialText("Best drinking game for parties or groups, it's really a must have app")
+        shareToTwitter.addURL(NSURL(string: "http://www.google.com"))
+
+        self.presentViewController(shareToTwitter , animated: true, completion: nil)
+        
+    }
     
     
     

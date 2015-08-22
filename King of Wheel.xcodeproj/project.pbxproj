@@ -10,6 +10,7 @@
 		371D5BAE1B6F6AD70048D963 /* SelectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371D5BAD1B6F6AD70048D963 /* SelectionData.swift */; };
 		371D5BEE1B724B700048D963 /* startAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371D5BED1B724B700048D963 /* startAnimations.swift */; };
 		376CFF1D1B6DB18900B57C5A /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376CFF1C1B6DB18900B57C5A /* SelectionViewController.swift */; };
+		378F6A8C1B889C1B00CEEB3F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378F6A8B1B889C1B00CEEB3F /* Social.framework */; };
 		37B37FC81B7509780001AC70 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B37FC71B7509780001AC70 /* InformationViewController.swift */; };
 		37F2DDA11B61C72000E2A734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DDA01B61C72000E2A734 /* AppDelegate.swift */; };
 		37F2DDA31B61C72000E2A734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DDA21B61C72000E2A734 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 		371D5BAD1B6F6AD70048D963 /* SelectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionData.swift; sourceTree = "<group>"; };
 		371D5BED1B724B700048D963 /* startAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startAnimations.swift; sourceTree = "<group>"; };
 		376CFF1C1B6DB18900B57C5A /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		378F6A8B1B889C1B00CEEB3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		37B37FC71B7509780001AC70 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		37F2DD9B1B61C72000E2A734 /* King of Wheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "King of Wheel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F2DD9F1B61C72000E2A734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378F6A8C1B889C1B00CEEB3F /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,7 @@
 		37F2DD921B61C72000E2A734 = {
 			isa = PBXGroup;
 			children = (
+				378F6A8B1B889C1B00CEEB3F /* Social.framework */,
 				37F2DD9D1B61C72000E2A734 /* King of Wheel */,
 				37F2DDB31B61C72000E2A734 /* King of WheelTests */,
 				37F2DD9C1B61C72000E2A734 /* Products */,
