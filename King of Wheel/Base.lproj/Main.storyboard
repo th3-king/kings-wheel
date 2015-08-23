@@ -38,6 +38,54 @@
                                     <outletCollection property="gestureRecognizers" destination="XIz-fB-DrH" appends="YES" id="zs8-vR-Bda"/>
                                 </connections>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7x-1m-pTP" userLabel="SpinningViews">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28w-Ai-g2v" userLabel="top">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="28w-Ai-g2v" secondAttribute="height" multiplier="2:1" constant="-150" id="ALA-b2-7kG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFT-0C-1Qn" userLabel="left">
+                                        <rect key="frame" x="0.0" y="150" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="FFT-0C-1Qn" secondAttribute="height" multiplier="1:2" constant="75" id="KxL-av-Ckd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aw-yf-wUx" userLabel="right">
+                                        <rect key="frame" x="150" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8aw-yf-wUx" secondAttribute="height" multiplier="1:2" constant="75" id="DLY-jM-cKh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1j-vx-sO8" userLabel="bottom">
+                                        <rect key="frame" x="150" y="150" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="R1j-vx-sO8" secondAttribute="height" multiplier="2:1" constant="-150" id="C1W-oJ-xeH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="28w-Ai-g2v" secondAttribute="trailing" constant="150" id="2KV-j0-x2s"/>
+                                    <constraint firstAttribute="trailing" secondItem="8aw-yf-wUx" secondAttribute="trailing" id="Kqx-JP-ODG"/>
+                                    <constraint firstItem="28w-Ai-g2v" firstAttribute="leading" secondItem="z7x-1m-pTP" secondAttribute="leading" id="ZAV-OD-WiC"/>
+                                    <constraint firstAttribute="bottom" secondItem="FFT-0C-1Qn" secondAttribute="bottom" id="Zj9-bV-wj9"/>
+                                    <constraint firstAttribute="bottom" secondItem="R1j-vx-sO8" secondAttribute="bottom" id="inB-2j-xZw"/>
+                                    <constraint firstItem="R1j-vx-sO8" firstAttribute="leading" secondItem="z7x-1m-pTP" secondAttribute="leading" constant="150" id="lLh-Kf-euc"/>
+                                    <constraint firstItem="FFT-0C-1Qn" firstAttribute="top" secondItem="z7x-1m-pTP" secondAttribute="top" constant="150" id="mL6-hx-mDg"/>
+                                    <constraint firstAttribute="trailing" secondItem="R1j-vx-sO8" secondAttribute="trailing" id="mhL-JB-33O"/>
+                                    <constraint firstItem="8aw-yf-wUx" firstAttribute="top" secondItem="z7x-1m-pTP" secondAttribute="top" id="sL4-Bb-CKe"/>
+                                    <constraint firstAttribute="bottom" secondItem="8aw-yf-wUx" secondAttribute="bottom" constant="150" id="slo-SV-O6l"/>
+                                    <constraint firstItem="FFT-0C-1Qn" firstAttribute="leading" secondItem="z7x-1m-pTP" secondAttribute="leading" id="wnS-Su-zmC"/>
+                                    <constraint firstItem="28w-Ai-g2v" firstAttribute="top" secondItem="z7x-1m-pTP" secondAttribute="top" id="xe1-Ac-mpc"/>
+                                </constraints>
+                            </view>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KingResized" translatesAutoresizingMaskIntoConstraints="NO" id="MBq-QH-oPB">
                                 <rect key="frame" x="0.0" y="30" width="320" height="164"/>
                                 <constraints>
@@ -87,13 +135,16 @@
                             <constraint firstItem="YFj-pe-wnU" firstAttribute="top" secondItem="QZr-qw-Okg" secondAttribute="bottom" constant="30" id="2m4-5R-Jlx"/>
                             <constraint firstItem="UHf-gx-JhI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="54A-Px-i0j"/>
                             <constraint firstItem="MBq-QH-oPB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="5M0-4C-dgc"/>
+                            <constraint firstItem="z7x-1m-pTP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="134" id="6Bd-4y-wJZ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0b7-Bz-Dlm" secondAttribute="bottom" id="7Gu-O8-5CE"/>
+                            <constraint firstItem="z7x-1m-pTP" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="9an-yT-Wxu"/>
                             <constraint firstAttribute="centerX" secondItem="QZr-qw-Okg" secondAttribute="centerX" id="BkP-sU-JEM"/>
                             <constraint firstItem="KmH-Fa-7Va" firstAttribute="leading" secondItem="QZr-qw-Okg" secondAttribute="trailing" constant="-110" id="Com-hC-eda"/>
                             <constraint firstAttribute="centerY" secondItem="QZr-qw-Okg" secondAttribute="centerY" id="DVT-u0-NF2"/>
                             <constraint firstItem="MBq-QH-oPB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="FdR-Fb-lj3"/>
                             <constraint firstItem="MBq-QH-oPB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="I5W-hn-WYf"/>
                             <constraint firstItem="0b7-Bz-Dlm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KNu-7h-nTo"/>
+                            <constraint firstItem="z7x-1m-pTP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Oeh-ce-EBB"/>
                             <constraint firstItem="QZr-qw-Okg" firstAttribute="top" secondItem="UHf-gx-JhI" secondAttribute="bottom" id="PAh-0e-3db"/>
                             <constraint firstItem="QZr-qw-Okg" firstAttribute="top" secondItem="cYL-dG-aeh" secondAttribute="bottom" constant="26" id="Per-ak-z1u"/>
                             <constraint firstItem="QZr-qw-Okg" firstAttribute="top" secondItem="KmH-Fa-7Va" secondAttribute="bottom" constant="-83" id="TEG-u9-9Ue"/>
@@ -104,6 +155,7 @@
                             <constraint firstItem="0b7-Bz-Dlm" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="dF3-dn-G7v"/>
                             <constraint firstItem="p63-7x-FQT" firstAttribute="top" secondItem="KmH-Fa-7Va" secondAttribute="bottom" constant="8" id="eF4-fb-bAL"/>
                             <constraint firstAttribute="trailing" secondItem="MBq-QH-oPB" secondAttribute="trailing" id="eyz-A5-UKw"/>
+                            <constraint firstItem="z7x-1m-pTP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="jv6-Ic-U77"/>
                             <constraint firstItem="0b7-Bz-Dlm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="jwx-y4-4TR"/>
                             <constraint firstAttribute="trailing" secondItem="QZr-qw-Okg" secondAttribute="trailing" constant="10" id="vCY-oE-Idt"/>
                             <constraint firstItem="p63-7x-FQT" firstAttribute="leading" secondItem="QZr-qw-Okg" secondAttribute="trailing" constant="-101" id="zlD-S0-S44"/>
@@ -113,18 +165,40 @@
                         <outlet property="Wheel" destination="QZr-qw-Okg" id="fEU-XK-tHr"/>
                         <outlet property="arrow" destination="p63-7x-FQT" id="6mG-zF-8zS"/>
                         <outlet property="backgroundImage" destination="0b7-Bz-Dlm" id="NiB-dq-onM"/>
+                        <outlet property="bottomSideOfWheelView" destination="R1j-vx-sO8" id="4m9-tL-ToJ"/>
                         <outlet property="crownIcon" destination="cYL-dG-aeh" id="PD2-gd-nv4"/>
                         <outlet property="fingerTip" destination="KmH-Fa-7Va" id="mes-Kv-YlL"/>
                         <outlet property="kingSelector" destination="MBq-QH-oPB" id="t18-w9-lic"/>
+                        <outlet property="leftSideOfWheelView" destination="FFT-0C-1Qn" id="3Gm-ce-Ee1"/>
                         <outlet property="pointerSelector" destination="UHf-gx-JhI" id="xK6-zK-SEf"/>
-                        <outlet property="swipeDown" destination="XIz-fB-DrH" id="wwL-QG-3PD"/>
+                        <outlet property="rightSideOfWheelView" destination="8aw-yf-wUx" id="1NJ-UH-WQD"/>
+                        <outlet property="swipeBottom" destination="a0k-qJ-4TC" id="FMF-9i-TPh"/>
+                        <outlet property="swipeLeft" destination="dYT-M7-Aa9" id="kUo-OH-oWJ"/>
+                        <outlet property="swipeRight" destination="XIz-fB-DrH" id="Xbk-cc-3Kq"/>
+                        <outlet property="swipeTop" destination="r9b-Ld-eWT" id="9EW-mY-hgI"/>
+                        <outlet property="topSideOfWheelView" destination="28w-Ai-g2v" id="dTo-Ol-894"/>
                         <segue destination="PTg-l1-ip8" kind="modal" identifier="selectionModal" id="duM-Ay-jn6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="down" id="XIz-fB-DrH" userLabel="Swipe Down">
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="down" id="XIz-fB-DrH" userLabel="Swipe Right">
                     <connections>
-                        <action selector="swipeSpinWheel:" destination="vXZ-lx-hvc" id="kxz-81-oDP"/>
+                        <action selector="swipeSpinWheel:" destination="vXZ-lx-hvc" id="oaa-hg-XM8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="a0k-qJ-4TC" userLabel="Swipe Bottom">
+                    <connections>
+                        <action selector="swipeSpinWheel:" destination="vXZ-lx-hvc" id="oE2-gx-cH7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="dYT-M7-Aa9" userLabel="Swipe Left">
+                    <connections>
+                        <action selector="swipeSpinWheel:" destination="vXZ-lx-hvc" id="VDo-U0-2cy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="r9b-Ld-eWT" userLabel="Swipe Top">
+                    <connections>
+                        <action selector="swipeSpinWheel:" destination="vXZ-lx-hvc" id="pX7-nR-u3A"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -172,23 +246,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookShare" translatesAutoresizingMaskIntoConstraints="NO" id="CO3-Zt-vmb">
-                                <rect key="frame" x="20" y="460" width="129" height="50"/>
+                                <rect key="frame" x="61" y="473" width="91" height="37"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="CO3-Zt-vmb" secondAttribute="height" multiplier="129:50" id="qsq-ET-HRR"/>
+                                    <constraint firstAttribute="width" secondItem="CO3-Zt-vmb" secondAttribute="height" multiplier="129:50" constant="-3.2999999999999972" id="qsq-ET-HRR"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vTp-26-Aqh" appends="YES" id="2tR-JR-y7b"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterShare" translatesAutoresizingMaskIntoConstraints="NO" id="wic-Xk-pwm">
-                                <rect key="frame" x="171" y="460" width="129" height="50"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="wic-Xk-pwm" secondAttribute="height" multiplier="129:50" id="rsx-Fx-3Vj"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="OJj-Yg-6tu" appends="YES" id="szt-gb-EmZ"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmj-Vr-zpf">
@@ -212,14 +276,29 @@
                                     <action selector="selectionType:" destination="qmR-p6-Cwi" eventType="valueChanged" id="5lU-DF-lek"/>
                                 </connections>
                             </segmentedControl>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterShare" translatesAutoresizingMaskIntoConstraints="NO" id="wic-Xk-pwm">
+                                <rect key="frame" x="161" y="473" width="98" height="37"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wic-Xk-pwm" secondAttribute="height" multiplier="129:50" constant="3.7000000000000028" id="rsx-Fx-3Vj"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OJj-Yg-6tu" appends="YES" id="szt-gb-EmZ"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69t-35-4dx">
+                                <rect key="frame" x="65" y="193" width="190" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Rules"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="wic-Xk-pwm" secondAttribute="trailing" constant="4" id="5Rt-wz-M8u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wic-Xk-pwm" secondAttribute="trailing" constant="45" id="5Rt-wz-M8u"/>
                             <constraint firstItem="QSh-dl-9vB" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leadingMargin" id="9OI-gE-8WX"/>
-                            <constraint firstItem="wic-Xk-pwm" firstAttribute="leading" secondItem="CO3-Zt-vmb" secondAttribute="trailing" constant="22" id="CLW-BR-Hfy"/>
+                            <constraint firstItem="wic-Xk-pwm" firstAttribute="leading" secondItem="CO3-Zt-vmb" secondAttribute="trailing" constant="9" id="CLW-BR-Hfy"/>
                             <constraint firstItem="lxC-48-rGI" firstAttribute="top" secondItem="Gmj-Vr-zpf" secondAttribute="bottom" constant="20" id="Che-tu-ORP"/>
-                            <constraint firstItem="CO3-Zt-vmb" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leadingMargin" constant="4" id="DTw-NA-aPf"/>
+                            <constraint firstItem="CO3-Zt-vmb" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leadingMargin" constant="45" id="DTw-NA-aPf"/>
                             <constraint firstItem="Czj-j3-V57" firstAttribute="top" secondItem="I9B-tE-WPY" secondAttribute="bottom" constant="4" id="EJk-3w-Sch"/>
                             <constraint firstItem="Gmj-Vr-zpf" firstAttribute="centerX" secondItem="qgw-MY-09w" secondAttribute="centerX" id="G4o-4i-feJ"/>
                             <constraint firstItem="Gmj-Vr-zpf" firstAttribute="leading" secondItem="qgw-MY-09w" secondAttribute="leading" constant="86" id="LaE-SZ-ZKN"/>

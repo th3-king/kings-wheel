@@ -13,7 +13,7 @@ TASKS:
 1. add terms and conditions modal, see if can add a link in alert text
 2. add views that correspond to the halfs of the wheel and add swipe gestures with specific directions
 3. re write the descriptions of the options
-4. check if bold text on selectionViewController for word looks better (it doesn't)
+4.
 5. 
 */
 
@@ -26,7 +26,16 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     @IBOutlet weak var pointerSelector: UIImageView!
     @IBOutlet weak var kingSelector: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet var swipeDown: UISwipeGestureRecognizer!
+    @IBOutlet weak var leftSideOfWheelView: UIView!
+    @IBOutlet weak var topSideOfWheelView: UIView!
+    @IBOutlet weak var rightSideOfWheelView: UIView!
+    @IBOutlet weak var bottomSideOfWheelView: UIView!
+    @IBOutlet var swipeRight: UISwipeGestureRecognizer!
+    @IBOutlet var swipeBottom: UISwipeGestureRecognizer!
+    @IBOutlet var swipeLeft: UISwipeGestureRecognizer!
+    @IBOutlet var swipeTop: UISwipeGestureRecognizer!
+    
+    
     
     
     var wheelFunctions = WheelFunctions()
@@ -46,9 +55,16 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         Wheel.image = UIImage(named: "perfectedWheelUpdatedColors.png")
         
         //initalises swipeGestures direction as down
-        swipeDown.direction = .Down
+        swipeRight.direction = .Down
         //adds 'swipeDown' sipeGesture to view
-        view.addGestureRecognizer(swipeDown)
+        rightSideOfWheelView.addGestureRecognizer(swipeRight)
+        swipeBottom.direction = .Left
+        bottomSideOfWheelView.addGestureRecognizer(swipeBottom)
+        swipeLeft.direction = .Up
+        leftSideOfWheelView.addGestureRecognizer(swipeLeft)
+        swipeTop.direction = .Right
+        topSideOfWheelView.addGestureRecognizer(swipeTop)
+        
         
         selectorArray += [crownIcon, pointerSelector, kingSelector]
         arrowFade(arrow, fingerTip: fingerTip)
@@ -74,7 +90,10 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     
     
     override func viewWillAppear(animated: Bool) {
-        swipeDown.enabled = true
+        swipeRight.enabled = true
+        swipeBottom.enabled = true
+        swipeLeft.enabled = true
+        swipeRight.enabled = true
         getSelectorAppearence(selectorIndex, imageArray: selectorArray)
         if selectorIndex == 2 {
             backgroundImage.image = UIImage(named: "backgroundOfMainView3.png")
@@ -120,7 +139,6 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     //when a swipe gesture that is downwards occurs it executes code 
     //(in stroyboard re-enable the other swipe gesture to activate down and up)
     @IBAction func swipeSpinWheel(sender: UISwipeGestureRecognizer) {
-        if (swipeDown.direction == .Down){
             //saves the spin (in degrees) to a variable named selection
             var selection = wheelFunctions.spinWheel(Wheel, currentView: self)
             
@@ -143,11 +161,14 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
             //in the detemineSelection function
             lastSelection = selection
 
-        }
         //The swipe gesture is disabled so that the user can't spin it many times
         //which elimates a bug, it is re-enabled in viewWillAppear method
-        swipeDown.enabled = false
+        swipeRight.enabled = false
+        swipeBottom.enabled = false
+        swipeLeft.enabled = false
+        swipeRight.enabled = false
     }
+    
     
     //used because of protocal superClass which allows data
     //from the informationViewController to be passed back to this viewController
