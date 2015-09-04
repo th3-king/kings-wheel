@@ -93,7 +93,7 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         swipeRight.enabled = true
         swipeBottom.enabled = true
         swipeLeft.enabled = true
-        swipeRight.enabled = true
+        swipeTop.enabled = true
         getSelectorAppearence(selectorIndex, imageArray: selectorArray)
         if selectorIndex == 2 {
             backgroundImage.image = UIImage(named: "backgroundOfMainView3.png")
@@ -166,7 +166,7 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         swipeRight.enabled = false
         swipeBottom.enabled = false
         swipeLeft.enabled = false
-        swipeRight.enabled = false
+        swipeTop.enabled = false
     }
     
     
@@ -176,9 +176,9 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         self.selectorIndex = value
     }
     
-    //sets top bar with battery and time to white style
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-       return UIStatusBarStyle.LightContent
+    //hides top bar so doesnt conflict with top
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
     
 

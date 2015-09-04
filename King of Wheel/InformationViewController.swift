@@ -15,19 +15,19 @@ protocol ModalViewControllerDelegate {
 
 class InformationViewController: UIViewController {
     
-
+    
     @IBOutlet weak var SelectorAppearance: UISegmentedControl!
     var selectedAppearanceIndex = 0
     var delegate:ModalViewControllerDelegate!
-    
+    var content = "No Content"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(animated: Bool) {
+        //shows the currently selected segment highlighted in the segmented control
         SelectorAppearance.selectedSegmentIndex = selectedAppearanceIndex
     }
 
@@ -36,8 +36,16 @@ class InformationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DetailedInformationSegue" {
+            let DetailedInformationController = segue.destinationViewController as! DetailedInformationViewController
+            DetailedInformationController.content = self.content
+        }
+    }
+    
     
     @IBAction func selectionType(sender: AnyObject) {
+        //checks what is selected in the segmented control and assigns a certain value if different options are selected
         if (SelectorAppearance.selectedSegmentIndex == 0) {
             selectedAppearanceIndex = 0
         }
@@ -56,30 +64,36 @@ class InformationViewController: UIViewController {
     }
     
     @IBAction func facebookShare(sender: AnyObject) {
+        //adds a share to facebook function to the button so people can share the app
         let shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
         shareToFacebook.setInitialText("Best drinking game for parties or groups, it's really a must have app")
+        //links a url to app on appstore (not sure what it will be yet)
         shareToFacebook.addURL(NSURL(string: "http://www.google.com"))
+        
         self.presentViewController(shareToFacebook , animated: true, completion: nil)
     }
     
     @IBAction func twitterShare(sender: AnyObject) {
+        //adds a share to twitter function to the twitter button so people can share the app
         let shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         shareToTwitter.setInitialText("Best drinking game for parties or groups, it's really a must have app")
+        //links a url to app on appstore (not sure what it will be yet)
         shareToTwitter.addURL(NSURL(string: "http://www.google.com"))
 
         self.presentViewController(shareToTwitter , animated: true, completion: nil)
         
     }
     
-    
-    
-    
-    
-    /*
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func termsAndConditionsButton(sender: AnyObject) {
+        content = "Terms and Conditions"
+        performSegueWithIdentifier("DetailedInformationSegue", sender: nil)
     }
-    */
+    
+    @IBAction func rulesButton(sender: AnyObject) {
+        content = "Rules"
+        performSegueWithIdentifier("DetailedInformationSegue", sender: nil)
+    }
+    
+    
 
 }

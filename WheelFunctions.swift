@@ -26,10 +26,12 @@ struct WheelFunctions {
     many time the transform is done, whilst slowing it with time.
     */
     func spinWheel(picture: UIImageView, currentView: UIViewController) -> Float{
+        //assigns spin a random angle so outcome is not precalculated
         var spin = self.randomAngle()
         
         func executeRotation(loops: Int) -> Float{
             var multipliedTime = CGFloat(0.5)
+            //creates a loop which increases the spin time creating a slow effect, there are two spins so it only turns clockwise
             for var i = 0; i < loops - 1; i++ {
                 UIView.animateWithDuration(NSTimeInterval(spin * multipliedTime) , animations: {
                     picture.transform = CGAffineTransformRotate(picture.transform , 3.1)
@@ -39,7 +41,7 @@ struct WheelFunctions {
             multipliedTime += CGFloat(0.5)
             }
             multipliedTime += CGFloat(0.5)
-            
+            //had to seperate because it should only perform completion after all other are done
             UIView.animateWithDuration(NSTimeInterval(spin * multipliedTime), animations: {
                     picture.transform = CGAffineTransformRotate(picture.transform , 3.1)
                     picture.transform = CGAffineTransformRotate(picture.transform , spin)
@@ -47,29 +49,33 @@ struct WheelFunctions {
                     }, completion: {(Bool) in
                         currentView.performSegueWithIdentifier("selectionModal", sender: nil)
                 })
-            
+            //converts spin to degrees from radians
             let spinToDegrees = GLKMathRadiansToDegrees(Float(spin));
+            //calculates the total degrees from radians used for segue of "SelectionModal" later
             let degreeOfSpin = (spinToDegrees * 2 + GLKMathRadiansToDegrees(3.1))*Float(loops) % 360
+            //returns it so it can be easily retrieved outside function scope
             return degreeOfSpin;
         }
+        //it is executed 5 times (loops) and assigns degreeOfSpin the degreeOfSpin from func
         let degreeOfSpin = executeRotation(5)
         return degreeOfSpin
     }
     
-    
+    //function used to move crown onto wheel for appealing purposes
     func dropCrown(crown: UIImageView, view : UIView){
         UIView.animateWithDuration(3.0, animations: {
             crown.transform = CGAffineTransformTranslate(crown.transform, 0.0, 48)
         })
     }
     
-    
+    //function used to move crown back to original position
     func resetCrown(crown: UIImageView, view : UIView){
         UIView.animateWithDuration(0, animations: {
             crown.transform = CGAffineTransformTranslate(crown.transform, 0.0, -48)
         })
     }
     
+    //function which works out which outcome it is so it can present correct information on selectionViewController
     func determineSelection(selection: Float) -> Int{
         switch(true){
         case (selection >= 0.0 &&  selection <= (360/13)-0.001):

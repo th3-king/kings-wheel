@@ -104,6 +104,43 @@ struct SelectionData {
         false  //king
     
     ]
+    let rulesAsOne =
+    "Ace (SNAKE EYES) \n" +
+    "You get to pick someone, whoever you pick has snake eyes and until someone gets another ace whoever looks at them has to drink!\n\n" +
     
-
+    "Two (YOU DECIDE)\n" +
+    "You get to pick one person to drink!\n" +
+    
+    "Three (DRINK)\n" +
+    "You have to drink!\n\n" +
+    
+    "Four (WHORE'S!)\n" +
+    "Incorperate the ladies, all the boys yell 'Whores!' and all the girl have to drink!\n\n" +
+    
+    "Five (BUST A MOVE)\n" +
+    "You always wanted to be a dancer, this is your chance to shine. Perform a dance move, the next person has to copy it going clockwise around the cirle, until someone messes up and has to drink!\n\n" +
+    
+    "Six (DICKS)\n" +
+    "All the girls yell 'Dicks!' and all the boys have to drink!\n\n" +
+    
+    "Seven (HEAVEN)\n" +
+    "Everybody has to reach to the sky, last one to put their hands up has to drink!\n\n" +
+    
+    "Eight (MATE)\n" +
+    "Pick someone who has to drink whenever you have to drink! If someone else gets it the last one cancels out\n\n" +
+    
+    "Nine (RYHME IN TIME)\n" +
+    "Whoever picks the card has to say a word, you then have to go around the group and each person has to say a word that rhymes with yours, if they repeat someone else's or take too long they have to drink!\n\n" +
+    
+    "Ten (CATERGORY)\n" +
+    "Pick a catergory and going round the group they have to say something that fits the catergory, whoever says something different has to drink!\n\n" +
+    
+    "Jack (NEVER HAVE I EVER)\n" +
+    "The whole group puts up 3 fingers, you say a 'never have i ever' and whoever has done it puts a finger down, it goes around the group until someone has no fingers left has to drink!\n\n" +
+    
+    "Queen (QUESTIONS)\n" +
+    "The player who just spinned starts by asking someone a question. That player then has to reply to someone with another question. This process continues until someone fails to ask a question and has to drink!\n\n" +
+    
+    "King (I RULE)\n" +
+    "Whoever picks the card gets to make a rule, anyone who doesn't follow the rule has to drink. when someone else draws a king the rule is replaced with theirs\n\n"
 }
