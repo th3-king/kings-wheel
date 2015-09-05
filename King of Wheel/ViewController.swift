@@ -25,6 +25,7 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     @IBOutlet weak var arrow: UIImageView!
     @IBOutlet weak var pointerSelector: UIImageView!
     @IBOutlet weak var kingSelector: UIImageView!
+    @IBOutlet weak var KingSelectorBottomHalf: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var leftSideOfWheelView: UIView!
     @IBOutlet weak var topSideOfWheelView: UIView!
@@ -90,6 +91,7 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
     
     
     override func viewWillAppear(animated: Bool) {
+        //Enables all swipe parts of wheel for spinning
         swipeRight.enabled = true
         swipeBottom.enabled = true
         swipeLeft.enabled = true
@@ -97,17 +99,16 @@ class ViewController: UIViewController, ModalViewControllerDelegate {
         getSelectorAppearence(selectorIndex, imageArray: selectorArray)
         if selectorIndex == 2 {
             backgroundImage.image = UIImage(named: "backgroundOfMainView3.png")
+            KingSelectorBottomHalf.hidden = false
         } else {
             backgroundImage.image = UIImage(named: "backgroundOfMainView4.png")
+            KingSelectorBottomHalf.hidden = true
         }
         //arrowFade(arrow, fingerTip: fingerTip)
         
         
     }
     
-    func doesWork() {
-        print("hey")
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

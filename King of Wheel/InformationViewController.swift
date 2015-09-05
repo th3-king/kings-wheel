@@ -17,9 +17,13 @@ class InformationViewController: UIViewController {
     
     
     @IBOutlet weak var SelectorAppearance: UISegmentedControl!
+    
+    //selector index for the segmented control
     var selectedAppearanceIndex = 0
     var delegate:ModalViewControllerDelegate!
     var content = "No Content"
+    //appURL needs to be changed so it links to
+    var appURL = "https://itunes.apple.com/au/INPUTCHANGEHERE"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +72,7 @@ class InformationViewController: UIViewController {
         let shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
         shareToFacebook.setInitialText("Best drinking game for parties or groups, it's really a must have app")
         //links a url to app on appstore (not sure what it will be yet)
-        shareToFacebook.addURL(NSURL(string: "http://www.google.com"))
+        //shareToFacebook.addURL(NSURL(string: appURL))
         
         self.presentViewController(shareToFacebook , animated: true, completion: nil)
     }
@@ -78,7 +82,7 @@ class InformationViewController: UIViewController {
         let shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         shareToTwitter.setInitialText("Best drinking game for parties or groups, it's really a must have app")
         //links a url to app on appstore (not sure what it will be yet)
-        shareToTwitter.addURL(NSURL(string: "http://www.google.com"))
+        //shareToTwitter.addURL(NSURL(string: appURL))
 
         self.presentViewController(shareToTwitter , animated: true, completion: nil)
         
@@ -94,6 +98,8 @@ class InformationViewController: UIViewController {
         performSegueWithIdentifier("DetailedInformationSegue", sender: nil)
     }
     
-    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 
 }

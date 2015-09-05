@@ -11,7 +11,7 @@ import UIKit
 
 let wheelFunctions = WheelFunctions()
 
-
+//used for starting animation to alert user which way to spin wheel
 func arrowFade(arrow: UIImageView, fingerTip: UIImageView){
     UIView.animateWithDuration(3.5 , animations: {
         arrow.hidden = false
@@ -35,7 +35,7 @@ func arrowFade(arrow: UIImageView, fingerTip: UIImageView){
 
 }
 
-
+//used when user changes the selector (what picks the section of wheel) to easily hide/show the UIimages
 func getSelectorAppearence(index: Int, imageArray: [UIImageView]){
     for var i = 0; i < imageArray.count; i++ {
         if i != index {
@@ -47,6 +47,7 @@ func getSelectorAppearence(index: Int, imageArray: [UIImageView]){
     
 }
 
+//Used for terms and condition alert at start because needs to wait for rest of app to set up otherwise it will not work
 func delay(delay: Double, closure:() -> ()) {
     dispatch_after(
         dispatch_time(

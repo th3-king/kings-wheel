@@ -104,12 +104,14 @@ struct SelectionData {
         false  //king
     
     ]
+    //Created a string which neatly sets out all the rules of the game used in DetailedViewController
+    //Could of used a function and choices variable but would could have slowed app
     let rulesAsOne =
     "Ace (SNAKE EYES) \n" +
     "You get to pick someone, whoever you pick has snake eyes and until someone gets another ace whoever looks at them has to drink!\n\n" +
     
     "Two (YOU DECIDE)\n" +
-    "You get to pick one person to drink!\n" +
+    "You get to pick one person to drink!\n\n" +
     
     "Three (DRINK)\n" +
     "You have to drink!\n\n" +
