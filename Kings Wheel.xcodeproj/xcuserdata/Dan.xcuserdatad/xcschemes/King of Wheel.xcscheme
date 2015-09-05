@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "37F2DD9A1B61C72000E2A734"
-               BuildableName = "King of Wheel.app"
-               BlueprintName = "King of Wheel"
-               ReferencedContainer = "container:King of Wheel.xcodeproj">
+               BuildableName = "Kings Wheel.app"
+               BlueprintName = "Kings Wheel"
+               ReferencedContainer = "container:Kings Wheel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "37F2DDAF1B61C72000E2A734"
-               BuildableName = "King of WheelTests.xctest"
-               BlueprintName = "King of WheelTests"
-               ReferencedContainer = "container:King of Wheel.xcodeproj">
+               BuildableName = "Kings Wheel.xctest"
+               BlueprintName = "Kings WheelTests"
+               ReferencedContainer = "container:Kings Wheel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "37F2DDAF1B61C72000E2A734"
-               BuildableName = "King of WheelTests.xctest"
-               BlueprintName = "King of WheelTests"
-               ReferencedContainer = "container:King of Wheel.xcodeproj">
+               BuildableName = "Kings Wheel.xctest"
+               BlueprintName = "Kings WheelTests"
+               ReferencedContainer = "container:Kings Wheel.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37F2DD9A1B61C72000E2A734"
-            BuildableName = "King of Wheel.app"
-            BlueprintName = "King of Wheel"
-            ReferencedContainer = "container:King of Wheel.xcodeproj">
+            BuildableName = "Kings Wheel.app"
+            BlueprintName = "Kings Wheel"
+            ReferencedContainer = "container:Kings Wheel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37F2DD9A1B61C72000E2A734"
-            BuildableName = "King of Wheel.app"
-            BlueprintName = "King of Wheel"
-            ReferencedContainer = "container:King of Wheel.xcodeproj">
+            BuildableName = "Kings Wheel.app"
+            BlueprintName = "Kings Wheel"
+            ReferencedContainer = "container:Kings Wheel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37F2DD9A1B61C72000E2A734"
-            BuildableName = "King of Wheel.app"
-            BlueprintName = "King of Wheel"
-            ReferencedContainer = "container:King of Wheel.xcodeproj">
+            BuildableName = "Kings Wheel.app"
+            BlueprintName = "Kings Wheel"
+            ReferencedContainer = "container:Kings Wheel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

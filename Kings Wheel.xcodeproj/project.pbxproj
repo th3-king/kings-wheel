@@ -41,14 +41,14 @@
 		378332201B913F8C00D8379E /* TermsAndConditionsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsData.swift; sourceTree = "<group>"; };
 		378F6A8B1B889C1B00CEEB3F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		37B37FC71B7509780001AC70 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
-		37F2DD9B1B61C72000E2A734 /* King of Wheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "King of Wheel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F2DD9B1B61C72000E2A734 /* Kings Wheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kings Wheel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F2DD9F1B61C72000E2A734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37F2DDA01B61C72000E2A734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F2DDA21B61C72000E2A734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37F2DDA51B61C72000E2A734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37F2DDA71B61C72000E2A734 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37F2DDAA1B61C72000E2A734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		37F2DDB01B61C72000E2A734 /* King of WheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "King of WheelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F2DDB01B61C72000E2A734 /* Kings Wheel.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kings Wheel.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F2DDB51B61C72000E2A734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37F2DDB61B61C72000E2A734 /* King_of_WheelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = King_of_WheelTests.swift; sourceTree = "<group>"; };
 		37F2DDC01B61C92A00E2A734 /* WheelFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WheelFunctions.swift; path = ../WheelFunctions.swift; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 		37F2DD9C1B61C72000E2A734 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37F2DD9B1B61C72000E2A734 /* King of Wheel.app */,
-				37F2DDB01B61C72000E2A734 /* King of WheelTests.xctest */,
+				37F2DD9B1B61C72000E2A734 /* Kings Wheel.app */,
+				37F2DDB01B61C72000E2A734 /* Kings Wheel.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37F2DD9A1B61C72000E2A734 /* King of Wheel */ = {
+		37F2DD9A1B61C72000E2A734 /* Kings Wheel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37F2DDBA1B61C72000E2A734 /* Build configuration list for PBXNativeTarget "King of Wheel" */;
+			buildConfigurationList = 37F2DDBA1B61C72000E2A734 /* Build configuration list for PBXNativeTarget "Kings Wheel" */;
 			buildPhases = (
 				37F2DD971B61C72000E2A734 /* Sources */,
 				37F2DD981B61C72000E2A734 /* Frameworks */,
@@ -168,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = "King of Wheel";
+			name = "Kings Wheel";
 			productName = "King of Wheel";
-			productReference = 37F2DD9B1B61C72000E2A734 /* King of Wheel.app */;
+			productReference = 37F2DD9B1B61C72000E2A734 /* Kings Wheel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		37F2DDAF1B61C72000E2A734 /* King of WheelTests */ = {
+		37F2DDAF1B61C72000E2A734 /* Kings WheelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37F2DDBD1B61C72000E2A734 /* Build configuration list for PBXNativeTarget "King of WheelTests" */;
+			buildConfigurationList = 37F2DDBD1B61C72000E2A734 /* Build configuration list for PBXNativeTarget "Kings WheelTests" */;
 			buildPhases = (
 				37F2DDAC1B61C72000E2A734 /* Sources */,
 				37F2DDAD1B61C72000E2A734 /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				37F2DDB21B61C72000E2A734 /* PBXTargetDependency */,
 			);
-			name = "King of WheelTests";
+			name = "Kings WheelTests";
 			productName = "King of WheelTests";
-			productReference = 37F2DDB01B61C72000E2A734 /* King of WheelTests.xctest */;
+			productReference = 37F2DDB01B61C72000E2A734 /* Kings Wheel.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 37F2DD961B61C72000E2A734 /* Build configuration list for PBXProject "King of Wheel" */;
+			buildConfigurationList = 37F2DD961B61C72000E2A734 /* Build configuration list for PBXProject "Kings Wheel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -225,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37F2DD9A1B61C72000E2A734 /* King of Wheel */,
-				37F2DDAF1B61C72000E2A734 /* King of WheelTests */,
+				37F2DD9A1B61C72000E2A734 /* Kings Wheel */,
+				37F2DDAF1B61C72000E2A734 /* Kings WheelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,7 +281,7 @@
 /* Begin PBXTargetDependency section */
 		37F2DDB21B61C72000E2A734 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 37F2DD9A1B61C72000E2A734 /* King of Wheel */;
+			target = 37F2DD9A1B61C72000E2A734 /* Kings Wheel */;
 			targetProxy = 37F2DDB11B61C72000E2A734 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -396,7 +396,7 @@
 				INFOPLIST_FILE = "King of Wheel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TopNotchApps.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Kings Wheel";
 			};
 			name = Debug;
 		};
@@ -408,7 +408,7 @@
 				INFOPLIST_FILE = "King of Wheel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TopNotchApps.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Kings Wheel";
 			};
 			name = Release;
 		};
@@ -427,8 +427,8 @@
 				INFOPLIST_FILE = "King of WheelTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TopNotchApps.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/King of Wheel.app/King of Wheel";
+				PRODUCT_NAME = "Kings Wheel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kings Wheel.app/Kings Wheel";
 			};
 			name = Debug;
 		};
@@ -443,15 +443,15 @@
 				INFOPLIST_FILE = "King of WheelTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TopNotchApps.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/King of Wheel.app/King of Wheel";
+				PRODUCT_NAME = "Kings Wheel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kings Wheel.app/Kings Wheel";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37F2DD961B61C72000E2A734 /* Build configuration list for PBXProject "King of Wheel" */ = {
+		37F2DD961B61C72000E2A734 /* Build configuration list for PBXProject "Kings Wheel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37F2DDB81B61C72000E2A734 /* Debug */,
@@ -460,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37F2DDBA1B61C72000E2A734 /* Build configuration list for PBXNativeTarget "King of Wheel" */ = {
+		37F2DDBA1B61C72000E2A734 /* Build configuration list for PBXNativeTarget "Kings Wheel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37F2DDBB1B61C72000E2A734 /* Debug */,
@@ -469,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37F2DDBD1B61C72000E2A734 /* Build configuration list for PBXNativeTarget "King of WheelTests" */ = {
+		37F2DDBD1B61C72000E2A734 /* Build configuration list for PBXNativeTarget "Kings WheelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37F2DDBE1B61C72000E2A734 /* Debug */,
