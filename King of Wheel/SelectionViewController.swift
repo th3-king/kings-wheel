@@ -34,13 +34,14 @@ class SelectionViewController: UIViewController {
             //
             let fontIndex = selectionFontColor[selectionFromMain!]
             
+            //sets the text of all the labels associated with the outcome
             KeyWord.text = index["word"]
-            
             actualSelection.text = index["card"]
             descriptionOfSelection.text = index["description"]
             descriptionOfSelection.sizeToFit()
             backToMainButton.setTitleColor(colourIndex, forState: UIControlState.Normal)
             
+            //Checks if the outcome has a hint, if so it presents it under description, else it hides it
             if index["hint"] != nil {
                 hintLabel.hidden = false
                 hintLabel.text = "Hint: " + index["hint"]!
@@ -51,6 +52,7 @@ class SelectionViewController: UIViewController {
             
             view.backgroundColor = colourIndex
             
+            //sets light or dark content depending on background colour of outcome
             if fontIndex == false{
                 KeyWord.textColor = UIColor.blackColor()
                 actualSelection.textColor = UIColor.blackColor()
@@ -77,6 +79,7 @@ class SelectionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //general dismiss function attached to back button
     @IBAction func backToMainAction(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }

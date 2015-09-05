@@ -61,7 +61,7 @@ class InformationViewController: UIViewController {
         }
     }
     
-
+    //sends selectedAppearenceIndex back to Viewcontroller then dismisses view
     @IBAction func backToMain(sender: AnyObject) {
         self.delegate.sendValue(selectedAppearanceIndex)
         self.dismissViewControllerAnimated(true, completion: nil)
